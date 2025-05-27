@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet - Clínica Veterinária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica Veterinária Patinhas Felizes</h1>
+        <p>Preencha as informações do seu pet para um atendimento completo!</p>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <section class="pet-info">
+                <h2>Informações do Pet</h2>
+                <div class="form-group">
+                    <label for="nome-pet">Nome do Animalzinho:</label>
+                    <input type="text" id="nome-pet" name="nome-pet" required>
+                </div>
+                <div class="form-group">
+                    <label for="raca-pet">Raça:</label>
+                    <input type="text" id="raca-pet" name="raca-pet" required>
+                </div>
+                <div class="form-group">
+                    <label for="idade-pet">Idade:</label>
+                    <input type="number" id="idade-pet" name="idade-pet" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="condicao-medica">Condição Médica (alergias, doenças preexistentes, etc.):</label>
+                    <textarea id="condicao-medica" name="condicao-medica" rows="4"></textarea>
+                </div>
+            </section>
+
+            <section class="owner-info">
+                <h2>Informações do Dono</h2>
+                <div class="form-group">
+                    <label for="nome-dono">Nome do Dono:</label>
+                    <input type="text" id="nome-dono" name="nome-dono" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone-dono">Telefone do Dono:</label>
+                    <input type="tel" id="telefone-dono" name="telefone-dono" pattern="[0-9]{2}[0-9]{4,5}[0-9]{4}" placeholder="Ex: 11987654321" required>
+                    <small>Formato: DDD + número (somente números)</small>
+                </div>
+                <div class="form-group">
+                    <label for="cpf-dono">CPF do Dono:</label>
+                    <input type="text" id="cpf-dono" name="cpf-dono" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Ex: 123.456.789-00" required>
+                    <small>Formato: XXX.XXX.XXX-XX</small>
+                </div>
+            </section>
+
+            <button type="submit">Cadastrar Pet</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Clínica Veterinária Patinhas Felizes. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
